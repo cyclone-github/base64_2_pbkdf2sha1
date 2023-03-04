@@ -13,9 +13,10 @@ import (
 // program to convert base64 strings to PBKDF2-HMAC-SHA1 hashes
 // written by cyclone
 // v2023-02-16.1900; initial release
+// v2023-03-04.1300; fixed typo
 
 func versionFunc() {
-	funcBase64Decode("Q3ljbG9uZSBiYXNlNjQgdG8gUEJLREYyLUhNQUMtU0hBMSBoYXNoIGNvbnZlcnRlciB2MjAyMy0wMi0xNi4xOTAwCg==")
+	funcBase64Decode("Q3ljbG9uZSBiYXNlNjQgdG8gUEJLREYyLUhNQUMtU0hBMSBoYXNoIGNvbnZlcnRlciB2MjAyMy0wMy0wNC4xMzAwCg==")
 }
 
 // help function
@@ -31,7 +32,7 @@ func main() {
 	// parse flag arguments
 	inputFilePath := flag.String("i", "", "Path to input file")
 	version := flag.Bool("version", false, "Program version:")
-	cyclone := flag.Bool("cyclone", false, "hashgen")
+	cyclone := flag.Bool("cyclone", false, "")
 	help := flag.Bool("help", false, "Prints help:")
 	flag.Parse()
 
