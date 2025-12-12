@@ -1,10 +1,19 @@
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=cyclone-github&repo=base64_2_pbkdf2sha1&theme=gruvbox)](https://github.com/cyclone-github/)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=cyclone-github&repo=base64_2_pbkdf2sha1&theme=gruvbox)](https://github.com/cyclone-github/)
 
 ## Cyclone's base64 to PBKDF2-HMAC-SHA1 hash converter
 Program to convert base64 encoded strings to PBKDF2-HMAC-SHA1 (hashcat -m 12000).
 
 ### Example Usage:
 - ./base64_2_pbkdf2sha1.bin -i base64.txt
+
+### Install latest release:
+```
+go install github.com/cyclone-github/base64_2_pbkdf2sha1@latest
+```
+### Install from latest source code (bleeding edge):
+```
+go install github.com/cyclone-github/base64_2_pbkdf2sha1@main
+```
 
 ### Compile from source:
 - If you want the latest features, compiling from source is the best option since the release version may run several revisions behind the source code.
